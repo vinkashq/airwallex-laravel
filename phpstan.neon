@@ -1,0 +1,8 @@
+parameters:
+    level: 5
+    bootstrapFiles:
+        - vendor/autoload.php
+    paths:
+        - src
+    ignoreErrors:
+        - '#Function now not found.#'

@@ -1,0 +1,48 @@
+{
+    "name": "vinkas/airwallex-laravel",
+    "description": "Laravel package for Airwallex",
+    "type": "library",
+    "require": {
+        "vinkas/airwallex": "^1.0",
+        "illuminate/support": "^11.34"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^2.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Vinkas\\Airwallex\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vinoth Kannan",
+            "email": "vinoth.kannan@vinkas.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Vinkas",
+            "email": "opensource@vinkas.com",
+            "homepage": "https://vinkas.com"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Vinkas\\Airwallex\\ServiceProvider"
+            ],
+            "aliases": {
+                "Airwallex": "Vinkas\\Airwallex\\Facades\\Airwallex"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "analyse": "phpstan analyse"
+    }
+}
